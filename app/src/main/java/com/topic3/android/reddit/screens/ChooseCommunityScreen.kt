@@ -37,7 +37,6 @@ private val defaultCommunities = listOf("raywenderlich", "androiddev", "puppies"
 
 @Composable
 fun ChooseCommunityScreen(viewModel: MainViewModel, modifier: Modifier = Modifier) {
-    //TODO Add your code here
     val scope = rememberCoroutineScope()
     val communities: List<String> by viewModel.subreddits.observeAsState(emptyList())
     var searchedText by remember { mutableStateOf("") }
